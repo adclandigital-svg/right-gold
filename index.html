@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video Sections</title>
+
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+    </head>
+
+    <body>
+
+        <!-- 🔹 TYPE 1 -->
+        <div class="section">
+            <h2>Landscape</h2>
+
+            <div class="video-grid">
+
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/ROyzDtHpGsM?controls=0&rel=0&modestbranding=1&fs=0&disablekb=1&iv_load_policy=3"
+                        title="video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🔹 TYPE 2 -->
+        <!-- <div class="section">
+            <h2>Type 2</h2>
+
+            <div class="video-grid">
+
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/oUFJJNQGwhk"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div> -->
+        </div>
+
+    </body>
+</html>
