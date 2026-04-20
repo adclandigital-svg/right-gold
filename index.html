@@ -21,14 +21,13 @@
       margin-bottom: 20px;
     }
 
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: auto;
+   .video-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 👈 single column */
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
     }
-
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -38,37 +37,37 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
     .video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
 
-/* overlays */
-.overlay {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background: transparent;
-  transition: all 0.3s ease;
-  z-index: 2;
-  opacity: 0;
-}
+    /* overlays */
+    .overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: 2;
+    opacity: 0;
+    }
 
-/* top overlay */
-.overlay.top {
-  top: 0;
-}
+    /* top overlay */
+    .overlay.top {
+    top: 0;
+    }
 
-/* bottom overlay */
-.overlay.bottom {
-  bottom: 0;
-}
+    /* bottom overlay */
+    .overlay.bottom {
+    bottom: 0;
+    }
 
-/* hover effect */
-.video-wrapper:hover .overlay {
-  opacity: 1;
-}
+    /* hover effect */
+    .video-wrapper:hover .overlay {
+    opacity: 1;
+    }
 
     .video-wrapper iframe {
       position: absolute;
@@ -91,43 +90,94 @@
 
                 <div class="video-wrapper">
 
-  <div class="overlay top"></div>
-  <div class="overlay bottom"></div>
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
 
-  <iframe
-    src="https://www.youtube.com/embed/ROyzDtHpGsM?controls=0&rel=0&modestbranding=1&fs=0&disablekb=1&iv_load_policy=3"
-    title="video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+                    <iframe
+                        src="https://www.youtube.com/embed/ROyzDtHpGsM?controls=0&rel=0&modestbranding=1&fs=0&disablekb=1&iv_load_policy=3"
+                        title="video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
 
-</div>
+                </div>
+                <div class="video-wrapper">
+
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
+
+                    <iframe width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/TpRKYVh_pm4?si=i9bmAoVFgti2u4Pu"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div class="video-wrapper">
+
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
+
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/UPONnJ2RzqI?si=a_ybc__tFCqdBBOw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+
+                </div>
             </div>
         </div>
 
-        <!-- 🔹 TYPE 2 -->
-        <!-- <div class="section">
-            <h2>Type 2</h2>
+        <div class="section">
+            <h2>Portait</h2>
 
             <div class="video-grid">
 
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U"
+
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
+
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/0Ly0yydD_2w"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
+
                 </div>
 
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw"
+
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
+
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Vq6sf24v16s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
+
                 </div>
 
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/oUFJJNQGwhk"
-                        allowfullscreen></iframe>
-                </div>
 
-            </div> -->
+                    <div class="overlay top"></div>
+                    <div class="overlay bottom"></div>
+
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/FAeBbQ2j6o0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
         </div>
 
     </body>
