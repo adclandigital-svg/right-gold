@@ -37,6 +37,38 @@
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
+    .video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* overlays */
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: transparent;
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* top overlay */
+.overlay.top {
+  top: 0;
+}
+
+/* bottom overlay */
+.overlay.bottom {
+  bottom: 0;
+}
+
+/* hover effect */
+.video-wrapper:hover .overlay {
+  opacity: 1;
+}
 
     .video-wrapper iframe {
       position: absolute;
@@ -58,14 +90,19 @@
             <div class="video-grid">
 
                 <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/ROyzDtHpGsM?controls=0&rel=0&modestbranding=1&fs=0&disablekb=1&iv_load_policy=3"
-                        title="video"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+
+  <div class="overlay top"></div>
+  <div class="overlay bottom"></div>
+
+  <iframe
+    src="https://www.youtube.com/embed/ROyzDtHpGsM?controls=0&rel=0&modestbranding=1&fs=0&disablekb=1&iv_load_policy=3"
+    title="video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+</div>
             </div>
         </div>
 
